@@ -3,18 +3,16 @@ import axios from 'axios';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
-const dotenv = require('dotenv')
-dotenv.config();
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API,
-  authDomain: process.env.authDomain,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId,
-  measurementId: process.env.measurementId
+  apiKey: "AIzaSyAcxRxzmlSHGXJpArI6BofYLHX9e4sDW0U",
+  authDomain: "speechanalyst.firebaseapp.com",
+  projectId: "speechanalyst",
+  storageBucket: "speechanalyst.firebasestorage.app",
+  messagingSenderId: "333784505089",
+  appId: "1:333784505089:web:190f8d540f4e76a83f9900",
+  measurementId: "G-FHKKCF9SWJ"
 };
 
 // Initialize Firebase
